@@ -410,6 +410,13 @@ local function buildIsland(world: Folder, index: number, center: Vector3, color:
 end
 
 function MapService:Init()
+	-- Remove Studio template leftovers (Baseplate template) that would cover the sky.
+	for _, name in { "Baseplate", "SpawnLocation" } do
+		local leftover = workspace:FindFirstChild(name)
+		if leftover then
+			leftover:Destroy()
+		end
+	end
 	setupLighting()
 	local world = Instance.new("Folder")
 	world.Name = "World"

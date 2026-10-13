@@ -555,6 +555,7 @@ function PlotService:Start()
 						S.DataService:AddSparkles(player, autoTotal)
 						data.stats.collected += autoTotal
 						S.ProgressService:Event(player, "Collect", autoTotal)
+						S.ProgressService:TutorialAdvance(player, 1)
 					end
 					data.stats.playSeconds += dt
 					if labelTimer >= 5 then
