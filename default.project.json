@@ -1,0 +1,49 @@
+{
+  "name": "CatchACloudling",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Shared": { "$path": "src/shared" }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Server": { "$path": "src/server" }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "$properties": {
+        "CharacterWalkSpeed": 20,
+        "CharacterJumpPower": 50,
+        "CameraMaxZoomDistance": 120
+      },
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "Client": { "$path": "src/client" }
+      }
+    },
+    "StarterGui": {
+      "$className": "StarterGui",
+      "$properties": { "ResetPlayerGuiOnSpawn": false }
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "$properties": { "FallenPartsDestroyHeight": -200, "Gravity": 196.2 }
+    },
+    "Lighting": {
+      "$className": "Lighting",
+      "$properties": {
+        "Ambient": [0.55, 0.55, 0.65],
+        "OutdoorAmbient": [0.6, 0.6, 0.7],
+        "Brightness": 2.5,
+        "ClockTime": 14.5,
+        "GlobalShadows": true
+      }
+    },
+    "SoundService": { "$className": "SoundService" },
+    "Players": {
+      "$className": "Players",
+      "$properties": { "CharacterAutoLoads": true }
+    }
+  }
+}
